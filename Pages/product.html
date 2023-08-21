@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/fetchData.js"></script>
+    <title>Product</title>
+</head>
+
+<body onload="stokRoti()">
+    <nav>
+        <div class="logo">
+            <img src="Gambar/logo_navbar.png" alt="Logo">
+            <h3>PT Cerita Rasa</h3>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/" id="home">Home</a></li>
+                <li><a href="/product" id="product">Product</a></li>
+                <li><a href="/career" id="career">Career</a></li>
+                <li><a href="/contact" id="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <br><br>
+        <h1 class="produkKami">Produk Kami</h1>
+        <div class="listProduct">
+            <div class="rotiStroberi">
+                <div class="stokS"><span id="stokStroberi"></span> pcs</div>
+                <img src="Gambar/Roti Stoberi.jpeg" alt="">
+                <div class="titleS">Roti Stroberi</div>
+            </div>
+            <div class="rotiKeju">
+                <div class="stokK"><span id="stokKeju"></span> pcs</div>
+                <img src="Gambar/Roti Keju.jpg" alt="">
+                <div class="titleK">Roti Keju</div>
+            </div>
+            <div class="rotiCoklat">
+                <div class="stokC"><span id="stokCoklat"></span> pcs</div>
+                <img src="Gambar/Roti Coklat.jpg" alt="">
+                <div class="titleC">Roti Keju</div>
+            </div>
+        </div>
+        <div class="formContainer">
+            <input type="text" class="form-control" placeholder="Masukkan Nama" id="name">
+            <input type="text" class="form-control" placeholder="Masukkan Alamat" id="alamat">
+            <input type="email" class="form-control" placeholder="Masukkan Email" id="email">
+            <label for="rotiOptions">Pilih Jenis Roti:</label>
+            <select class="form-control" id="rotiOptions">
+                <option value="Roti Stroberi">Roti Stroberi</option>
+                <option value="Roti Keju">Roti Keju</option>
+                <option value="Roti Coklat">Roti Coklat</option>
+            </select>
+            <input type="number" class="form-control" id="jumlah" placeholder="Masukkan Jumlah">
+            <button class="btn btn-primary" onclick="beliRoti()">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
